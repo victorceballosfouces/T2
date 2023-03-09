@@ -87,4 +87,4 @@ def mcd(numero1,numero2):
 
 
 import doctest
-doctest.testmod()
+doctest.testmod(verbose = True)
