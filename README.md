@@ -1,6 +1,6 @@
 # Segunda tarea de APA 2023: Manejo de números primos
 
-## Nom i cognoms
+## Nom i cognoms: Victor Ceballos Fouces
 
 ## Fichero `primos.py`
 
@@ -154,7 +154,7 @@ def mcd(numero1,numero2):
 
 
 import doctest
-doctest.testmod()
+doctest.testmod(verbose = True)
 ```
 
 #### Subida del resultado al repositorio GitHub ¿y *pull-request*?
