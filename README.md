@@ -39,6 +39,14 @@ Estas dos funciones deben cumplir las condiciones siguientes:
 
 - Aunque también sea sub-óptimo desde el punto de vista de la programación, ninguna de las dos funciones puede
   depender de la otra; cada una debe programarse por separado.
+  
+### Obtención del mínimo común múltiplo y el máximo común divisor para un número arbitrario de argumentos
+
+Escriba las funciones `mcmN()` y `mcdN()`, que calculan el mínimo común múltiplo y el máximo común divisor para un
+número arbitrario de argumentos:
+
+- `mcm(*numeros)`:  Devuelve el mínimo común múltiplo de sus argumentos.
+- `mcd(*numeros)`:  Devuelve el máximo común divisor de sus argumentos.
 
 ### Tests unitarios
 
@@ -51,6 +59,8 @@ comprobarse las siguientes condiciones:
 - `descompon(numero)`: Al ejecutar `descompon(36 * 175 * 143)`, la salida debe ser `(2, 2, 3, 3, 5, 5, 7, 11, 13)`.
 - `mcm(num1, num2)`: Al ejecutar `mcm(90, 14)`, la salida debe ser `630`.
 - `mcd(num1, num2)`: Al ejecutar `mcd(924, 780)`, la salida debe ser `12`.
+- `mcmN(numeros)`: Al ejecutar `mcm(42, 60, 70, 63)`, la salida debe ser `1260`.
+- `mcdN(numeros)`: Al ejecutar `mcd(820, 630, 1050, 1470)`, la salida debe ser `10`.
 
 ### Entrega
 
@@ -60,10 +70,10 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 *verbosa*, de manera que se muestre el resultado de la ejecución de los tests unitarios.
 
 ##### Doctest Passed
-![Doctest Passed](doctest_passed)
+![Doctest Passed](doctest_passed.png)
 
 ##### Doctest Failed
-![Doctest Failed](doctest_failed)
+![Doctest Failed](doctest_failed.png)
 
 
 Inserte a continuación el contenido del fichero `primos.py` usando los comandos necesarios para que se realice el
