@@ -75,6 +75,7 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 ##### Doctest Failed
 ![Doctest Failed](doctest_failed.png)
 
+#### Código desarrollado
 
 Inserte a continuación el contenido del fichero `primos.py` usando los comandos necesarios para que se realice el
 realce sintáctico en Python del mismo.
