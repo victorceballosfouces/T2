@@ -60,10 +60,10 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 *verbosa*, de manera que se muestre el resultado de la ejecución de los tests unitarios.
 
 ##### Doctest Passed
-![Doctest Passed](img/doctest_passed.png)
+![Doctest Passed](img/)
 
 ##### Doctest Failed
-![Doctest Failed](img/doctest_failed.png)
+![Doctest Failed](img/)
 
 
 Inserte a continuación el contenido del fichero `primos.py` usando los comandos necesarios para que se realice el
@@ -155,7 +155,47 @@ def mcd(numero1,numero2):
             mcd *= factor
     
     return mcd
-    
+
+
+def mcmN(*numeros):
+    """
+    Devuelve el mínimo común múltiplo de sus argumentos.
+    >>> mcmN(42, 60, 70, 63)
+    1260
+    """
+    # Encontrar el máximo número en la lista
+    max_num = max(numeros)
+
+    # Inicializar la variable del MCM
+    mcm = max_num
+
+    # Encontrar el MCM
+    while True:
+        if all(mcm % num == 0 for num in numeros):
+            return mcm
+        else:
+            mcm += max_num
+
+
+def mcdN(*numeros):
+    """
+    Devuelve el máximo común divisor de sus argumentos.
+    >>> mcdN(820, 630, 1050, 1470)
+    10
+    """
+    # Encontrar el mínimo número en la lista
+    min_num = min(numeros)
+
+    # Inicializar la variable del MCD
+    mcd = 1
+
+    # Encontrar el MCD
+    for i in range(1, min_num + 1):
+        if all(num % i == 0 for num in numeros):
+            mcd = i
+
+    return mcd
+
 
 
 import doctest
