@@ -60,10 +60,10 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 *verbosa*, de manera que se muestre el resultado de la ejecución de los tests unitarios.
 
 ##### Doctest Passed
-![Doctest Passed](img/doctest_passed)
+![Doctest Passed](doctest_passed)
 
 ##### Doctest Failed
-![Doctest Failed](img/doctest_failed)
+![Doctest Failed](doctest_failed)
 
 
 Inserte a continuación el contenido del fichero `primos.py` usando los comandos necesarios para que se realice el
